@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>📚</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="spark!y">
+	<meta name="description" content="a spark!y creation">
+	<meta property="og:title" content="library of knowledge">
+	<meta property="og:description" content="library of knowledge">
+	<meta property="og:image" content="/some-image.png">
+	<meta property="og:url" content="/this-page.html">
+	<meta property="og:site_name" content="📚">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="image description">
+
+	<link href="reset.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+	<h1>📚</h1>
+	<section class="books">
+	</section>
+	<div class="btm-menu">
+		<button class="btn-add-book">
+			<h3>Add Book</h3>
+		</button>
+		<div class="sort-menu">
+			<label for="sort">Sort by:</label>
+			<select size ="1" id="sort-menu" name="sort"></select>
+
+			<label for="order">Sort order:</label>
+			<select size="1" id="order-menu" name="order"></select>
+		</div>
+	</div>
+	<div class="form-div">
+		<form id="add-book-form" class="add-book-form" novalidate>
+			<fieldset>
+				<legend>Add a book</legend>
+
+				<label for="title">Book title: </label>
+				<input type="text" name="title" id="title" autocomplete="off">
+
+				<label for="author">Book author: </label>
+				<input type="text" name="author" id="author" autocomplete="off">
+
+				<label for="year">Year published: </label>
+				<select id="year" name="year" size="3"></select>
+
+				<button form="add-book-form" type="reset" id="reset-btn">Reset</button>
+				<button form="add-book-form" type="button" id="add-btn" value="book">Add Book</button>
+				<button type="button" id="close-btn">Close</button>
+			</fieldset>
+		</form>	
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+/* define colors in root */
+:root {
+    --white: rgb(236, 232, 232);
+    --black: rgb(20, 20, 20);
+}
+/* set border box */
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* set fonts in html */
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+/* set background in body */
+body {
+    background: brown;
+}
+
+h1 {
+    margin-top: 1.5vh;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.books {
+    background: aqua;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    min-width: 300px;
+}
+.book {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 3px solid black;
+    width: 300px;
+    margin: 3px;
+}
+.red-bg {
+    background: red;
+}
+.green-bg {
+    background: green;
+}
+.book-title {
+    background: red;
+}
+.book-author {
+    background: orange;
+}
+.book-year {
+    background: yellow;
+}
+.book-read {
+    background: green;
+}
+.book-date-added {
+    background: blue;
+    color: white;
+}
+.btn-add-book {
+    background: rgb(59, 130, 246);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-read-book {
+    background: purple;
+}
+.form-div {
+    background: silver;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-70%);
+}
+.add-book-form {
+    background: gold;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+legend {
+    padding: 0.5rem;
+}
+legend, label, select, input {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+input, select {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
